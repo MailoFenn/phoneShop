@@ -1,0 +1,28 @@
+.logo {
+    width: 150px;
+    margin-right: 10px;
+}
+
+.header {
+    padding: 10px 20px;
+}
+
+.shopping_cart {
+    margin-right: 70px;
+}
+
+.right_header {
+    order: 99;
+    margin-left: auto;
+    align-self: center;
+}
+
+.account {
+    margin-right: 30px;
+}
+
+.icon {
+    font-size: 30px;
+    color: #006cb1;
+    cursor: pointer;
+}
