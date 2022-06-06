@@ -3,7 +3,7 @@ import './ProductCard.css';
 import phone from '../../images/phone.png';
 const { Meta } = Card;
 
-const ProductCard = () => (
+const ProductCard = (props) => (
     <Card
         hoverable
         style={{
@@ -15,8 +15,13 @@ const ProductCard = () => (
         }}
         cover={<img alt="example" src={phone} />}
     >
-        <Meta title="iPhone 12" description="89 990 руб." />
-        <Button className={'add_to_cart'}>Купить</Button>
+        <Meta title={props.title} description={props.coast} />
+        <Button
+            className={'add_to_cart'}
+            onClick={() => {props.addToCart()}}
+        >
+            Купить
+        </Button>
     </Card>
 );
 
