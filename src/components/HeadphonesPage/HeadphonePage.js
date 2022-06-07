@@ -1,14 +1,14 @@
 import ProductCard from "../ProductCard/ProductCard";
 import React from "react";
-import './PhonePage.css';
+import './HeadphonePage.css';
 import {addToCart} from "../../store/actions/cart.action";
 import {Component} from "react";
 
-export default class PhonePage extends Component {
+export default class HeadphonePage extends Component {
     render() {
         return (
             <React.Fragment>
-                {this.props.state.state.phone.products.map(e =>
+                {this.props.state.state.headphones.products.map(e =>
                     <ProductCard
                         className={'card'}
                         key={e.id}

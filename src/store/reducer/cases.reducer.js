@@ -1,16 +1,16 @@
-import {phoneAction} from "../actions/phone.action";
+import {casesAction} from "../actions/cases.action";
 import sendAPI from "../../api/api";
 
 const initialState = {
     products: []
 }
 
-const phoneReducer = (state = initialState, action) => {
-    sendAPI.getPhone().then((res) => {
+const casesReducer = (state = initialState, action) => {
+    sendAPI.getCases().then((res) => {
         state.products = res.data.result
     })
     switch (action.type) {
-        case phoneAction.GET_PHONE:
+        case casesAction.GET_CASES:
             state.products = action.result
             return state;
         default:
@@ -18,4 +18,4 @@ const phoneReducer = (state = initialState, action) => {
     }
 }
 
-export default phoneReducer;
+export default casesReducer;

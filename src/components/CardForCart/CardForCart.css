@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 17pt;
+}
+
+.coast {
+    font-size: 13pt;
+}
+
+.info {
+    width: 230px;
+}
+
+.close {
+    align-self: flex-start;
+    color: #ff4d4f;
+}
+
+.image {
+    width: 100px;
+}

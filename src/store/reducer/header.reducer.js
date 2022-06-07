@@ -9,6 +9,9 @@ const headerReducer = (state = initialState, action) => {
         case generalAction.CART_INC:
             state.cartCount++;
             return state;
+        case generalAction.CART_DEC:
+            state.cartCount -= action.quantity;
+            return state;
         default:
             return state;
     }

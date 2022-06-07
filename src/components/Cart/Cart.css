@@ -1,0 +1,5 @@
+.fullCoast {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 18pt;
+}

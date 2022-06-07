@@ -28,7 +28,7 @@ const Header = (props) => {
             <Menu mode="horizontal" defaultSelectedKeys={['phone']}>
                 <img alt={'logo'} src={logo} className={'logo'}/>
                 <Menu.Item key="phone">
-                    <NavLink to={'/'}>Телефоны</NavLink>
+                    <NavLink to={'/phones'}>Телефоны</NavLink>
                 </Menu.Item>
                 <Menu.Item key="cases">
                     <NavLink to={'/cases'}>Чехлы</NavLink>

@@ -1,8 +1,14 @@
 export const generalAction = {
-    CART_INC: 'CART_INC'
+    CART_INC: 'CART_INC',
+    CART_DEC: 'CART_DEC'
 }
 
-export const pushAddButton = (id) => ({
-    type: generalAction.CART_INC,
-    id: id
+export const pushAddButton = () => ({
+    type: generalAction.CART_INC
 })
+
+export const cartDec = (quantity) => ({
+    type: generalAction.CART_DEC,
+    quantity: quantity
+})
+

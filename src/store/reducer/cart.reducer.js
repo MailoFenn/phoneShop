@@ -19,6 +19,11 @@ const cartReducer = (state = initialState, action) => {
                 state.products.push(action.product)
             }
             return state;
+        case cartAction.DELETE:
+            state.products = state.products.filter((e) => {
+                return e.id !== action.id
+            })
+            return state
         default:
             return state;
     }

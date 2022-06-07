@@ -1,6 +1,5 @@
 import {Button, Card} from 'antd';
 import './ProductCard.css';
-import phone from '../../images/phone.png';
 const { Meta } = Card;
 
 const ProductCard = (props) => (
@@ -13,15 +12,19 @@ const ProductCard = (props) => (
             display: "flex",
             flexDirection: "column"
         }}
-        cover={<img alt="example" src={phone} />}
+        cover={<img alt="example" src={props.image} className={'productImage'}/>}
     >
-        <Meta title={props.title} description={props.coast} />
-        <Button
-            className={'add_to_cart'}
-            onClick={() => {props.addToCart()}}
-        >
-            Купить
-        </Button>
+        <div className={'productInfo'}>
+            <div className={'productTitle'}>{props.title}</div>
+            <div className={'description'}>{props.coast + ' руб.'}</div>
+            <Button
+                className={'add_to_cart'}
+                onClick={() => {props.addToCart()}}
+            >
+                Купить
+            </Button>
+        </div>
+
     </Card>
 );
 

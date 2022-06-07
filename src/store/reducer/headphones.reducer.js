@@ -1,16 +1,16 @@
-import {phoneAction} from "../actions/phone.action";
+import {headphonesAction} from "../actions/headphones.action";
 import sendAPI from "../../api/api";
 
 const initialState = {
     products: []
 }
 
-const phoneReducer = (state = initialState, action) => {
-    sendAPI.getPhone().then((res) => {
+const headphonesReducer = (state = initialState, action) => {
+    sendAPI.getHeadphones().then((res) => {
         state.products = res.data.result
     })
     switch (action.type) {
-        case phoneAction.GET_PHONE:
+        case headphonesAction.GET_HEADPHONES:
             state.products = action.result
             return state;
         default:
@@ -18,4 +18,4 @@ const phoneReducer = (state = initialState, action) => {
     }
 }
 
-export default phoneReducer;
+export default headphonesReducer;

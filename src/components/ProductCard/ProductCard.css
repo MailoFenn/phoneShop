@@ -1,3 +1,23 @@
 .add_to_cart {
     margin-top: 10px;
 }
+
+.productImage {
+    height: 240px;
+    width: auto;
+}
+
+.productTitle {
+    max-width: 240px;
+    font-size: 13pt;
+}
+
+.description {
+    max-width: 240px;
+}
+
+.productInfo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
