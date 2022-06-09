@@ -14,9 +14,11 @@ const Cart = (props) => {
             <div>
                 {props.state.state.cart.products.map(e =>
                     <CardForCart
+                        key={e.id}
                         title={e.title}
                         coast={e.coast}
                         quantity={e.quantity}
+                        image={e.image}
                         delete={() => props.state.dispatch(deleteItem(e.id, e.quantity))}
                     />
                 )}

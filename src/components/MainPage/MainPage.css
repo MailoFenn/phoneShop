@@ -1,0 +1,51 @@
+.main-content {
+    width: 100%;
+}
+
+.banner {
+    background-image: url("../../images/banner-1.jpg");
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.bottom-banner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(205, 205, 205, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 14pt;
+}
+
+.offer {
+    font-size: 10pt;
+    color: #909090;
+}
+
+.gift {
+    background-color: rgba(205, 205, 205, 0.3);
+    height: 300px;
+    width: 48%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    font-size: 14pt;
+}
+
+.gift-text {
+    text-align: center;
+}

@@ -1,0 +1,23 @@
+.footer-container {
+    background-color: #cdcdcd;
+}
+
+.footer-content {
+    width: 1040px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-info > p {
+    margin: 0;
+    font-size: 13pt;
+}

@@ -14,7 +14,7 @@ const CardForCart = (props) => {
             }}
         >
             <div className={'container'}>
-                <img alt={props.title} src={image} className={'image'}/>
+                <img alt={props.title} src={props.image} className={'image'}/>
                 <div className={'info'}>
                     <p className={'title'}>{props.title}</p>
                     <p className={'coast'}>{props.coast} руб</p>

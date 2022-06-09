@@ -15,7 +15,8 @@ export default class HeadphonePage extends Component {
                         addToCart={() => this.props.state.dispatch(addToCart({
                             id: e.id,
                             title: e.title,
-                            coast: e.coast
+                            coast: e.coast,
+                            image: e.image
                         }))}
                         coast={e.coast}
                         title={e.title}

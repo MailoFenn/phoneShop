@@ -25,8 +25,15 @@ const Header = (props) => {
 
     return (
         <div className={'header'}>
-            <Menu mode="horizontal" defaultSelectedKeys={['phone']}>
+            <Menu
+                mode="horizontal"
+                defaultSelectedKeys={['main']}
+                selectedKeys={[]}
+            >
                 <img alt={'logo'} src={logo} className={'logo'}/>
+                <Menu.Item key="main">
+                    <NavLink to={'/'}>Главная</NavLink>
+                </Menu.Item>
                 <Menu.Item key="phone">
                     <NavLink to={'/phones'}>Телефоны</NavLink>
                 </Menu.Item>
